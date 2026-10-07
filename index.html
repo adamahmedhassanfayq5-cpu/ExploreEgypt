@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="استكشف مصر - دليل السفر الشامل لمصر والحضارة الفرعونية">
+    <title>استكشف مصر - Explore Egypt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🔺</span>
+                <span class="logo-text">مصر</span>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">عن مصر</a></li>
+                <li><a href="#places">الأماكن</a></li>
+                <li><a href="#attractions">الجذب السياحي</a></li>
+                <li><a href="#culture">الثقافة</a></li>
+                <li><a href="#contact">تواصل</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <button class="theme-btn" id="themeBtn">
+                    <span class="sun">☀️</span>
+                    <span class="moon">🌙</span>
+                </button>
+                
+                <select class="language-select" id="langSelect">
+                    <option value="ar">العربية 🇪🇬</option>
+                    <option value="en">English 🇺🇸</option>
+                    <option value="fr">Français 🇫🇷</option>
+                    <option value="es">Español 🇪🇸</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title" data-ar="اكتشف سحر مصر الخالد" data-en="Discover Egypt's Eternal Magic" data-fr="Découvrez la Magie Éternelle de l'Égypte" data-es="Descubre la Magia Eterna de Egipto">اكتشف سحر مصر الخالد</h1>
+            <p class="hero-subtitle" data-ar="رحلة عبر 5000 سنة من الحضارة والعظمة الفرعونية" data-en="A journey through 5000 years of civilization and pharaonic greatness" data-fr="Un voyage à travers 5000 ans de civilisation et de grandeur pharaonique" data-es="Un viaje a través de 5000 años de civilización y grandeza faraónica">رحلة عبر 5000 سنة من الحضارة والعظمة الفرعونية</p>
+            <a href="#about" class="hero-btn" data-ar="ابدأ الاستكشاف" data-en="Start Exploring" data-fr="Commencer l'exploration" data-es="Comenzar a explorar">ابدأ الاستكشاف</a>
+        </div>
+        <div class="hero-image">
+            <div class="pyramid-group">
+                <div class="pyramid"></div>
+                <div class="pyramid"></div>
+                <div class="pyramid"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Egypt Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-ar="عن مصر العظيمة" data-en="About Great Egypt" data-fr="À propos de la grande Égypte" data-es="Acerca de la Gran Egipto">عن مصر العظيمة</h2>
+                <p class="section-subtitle" data-ar="اكتشف أسرار الحضارة الفرعونية" data-en="Discover the secrets of the Pharaonic civilization" data-fr="Découvrez les secrets de la civilisation pharaonique" data-es="Descubre los secretos de la civilización faraónica">اكتشف أسرار الحضارة الفرعونية</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">🏛️</div>
+                    <h3 data-ar="الحضارة القديمة" data-en="Ancient Civilization" data-fr="Civilisation Ancienne" data-es="Civilización Antigua">الحضارة القديمة</h3>
+                    <p data-ar="مصر القديمة أسست أحد أعظم الحضارات في التاريخ، بدأت من الأسرة الأولى حتى الدولة الحديثة وحكمت لآلاف السنين" data-en="Ancient Egypt established one of the greatest civilizations in history, lasting thousands of years from the First Dynasty to the New Kingdom" data-fr="L'Égypte ancienne a fondé l'une des plus grandes civilisations de l'histoire, durant des milliers d'années" data-es="El antiguo Egipto estableció una de las mayores civilizaciones de la historia, durando miles de años">مصر القديمة أسست أحد أعظم الحضارات في التاريخ</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">📐</div>
+                    <h3 data-ar="الهندسة المعمارية" data-en="Architecture" data-fr="Architecture" data-es="Arquitectura">الهندسة المعمارية</h3>
+                    <p data-ar="بنى المصريون القدماء المعابد والأهرامات باستخدام تقنيات هندسية متقدمة جداً، وكل ذلك بدون الآليات الحديثة" data-en="Ancient Egyptians built temples and pyramids using advanced engineering techniques, all without modern machinery" data-fr="Les anciens Égyptiens ont construit des temples et des pyramides en utilisant des techniques d'ingénierie avancées" data-es="Los antiguos egipcios construyeron templos y pirámides utilizando técnicas de ingeniería avanzadas">بنى المصريون القدماء المعابد والأهرامات باستخدام تقنيات هندسية متقدمة</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">✍️</div>
+                    <h3 data-ar="الكتابة والفنون" data-en="Writing & Arts" data-fr="Écriture et Arts" data-es="Escritura y Artes">الكتابة والفنون</h3>
+                    <p data-ar="اخترع المصريون الكتابة الهيروغليفية وأنشأوا حضارة فنية متقدمة جداً، وترك لنا إرثاً فنياً رائعاً" data-en="Egyptians invented hieroglyphic writing and created an advanced artistic civilization, leaving us a magnificent artistic heritage" data-fr="Les Égyptiens ont inventé l'écriture hiéroglyphique et créé une civilisation artistique avancée" data-es="Los egipcios inventaron la escritura jeroglífica y crearon una civilización artística avanzada">اخترع المصريون الكتابة الهيروغليفية وأنشأوا حضارة فنية متقدمة</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">🌾</div>
+                    <h3 data-ar="النيل الخالد" data-en="The Eternal Nile" data-fr="Le Nil Éternel" data-es="El Nilo Eterno">النيل الخالد</h3>
+                    <p data-ar="نهر النيل هو شريان الحياة في مصر، يحمل الماء والخصوبة، ويعتبر أطول نهر في العالم ولعب دوراً هاماً في حياة المصريين" data-en="The Nile River is the lifeblood of Egypt, bringing water and fertility. The world's longest river played a vital role in Egyptian civilization" data-fr="Le Nil est la source de vie en Égypte, apportant l'eau et la fertilité, le plus long fleuve du monde" data-es="El Nilo es la fuente de vida en Egipto, trayendo agua y fertilidad, el río más largo del mundo">نهر النيل هو شريان الحياة في مصر</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">👑</div>
+                    <h3 data-ar="الفراعنة والملوك" data-en="Pharaohs & Kings" data-fr="Pharaons et Rois" data-es="Faraones y Reyes">الفراعنة والملوك</h3>
+                    <p data-ar="حكم مصر عدد من الفراعنة العظماء مثل رمسيس وخوفو وتوت عنخ آمون، وتركوا إرثاً خالداً من الحضارة والقوة" data-en="Egypt was ruled by great pharaohs like Ramesses, Khufu, and Tutankhamun, leaving an eternal legacy of power and civilization" data-fr="L'Égypte a été dirigée par des grands pharaons comme Ramsès, Khéops et Toutânkhamon" data-es="Egipto fue gobernado por grandes faraones como Ramsés, Khufu y Tutankamón">حكم مصر عدد من الفراعنة العظماء</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">🗿</div>
+                    <h3 data-ar="الآثار والتماثيل" data-en="Monuments & Statues" data-fr="Monuments et Statues" data-es="Monumentos y Estatuas">الآثار والتماثيل</h3>
+                    <p data-ar="تحتوي مصر على مئات الآثار الفرعونية والتماثيل الضخمة مثل أبو الهول والتماثيل الفرعونية التي تروي قصص الحضارة" data-en="Egypt contains hundreds of pharaonic monuments and massive statues like the Sphinx, telling the stories of an amazing civilization" data-fr="L'Égypte contient des centaines de monuments pharaoniques et de statues géantes comme le Sphinx" data-es="Egipto contiene cientos de monumentos faraónicos y estatuas gigantes como la Esfinge">تحتوي مصر على مئات الآثار الفرعونية والتماثيل الضخمة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Places Section -->
+    <section class="places" id="places">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-ar="أشهر الأماكن السياحية" data-en="Popular Tourist Places" data-fr="Lieux touristiques populaires" data-es="Lugares turísticos populares">أشهر الأماكن السياحية</h2>
+                <p class="section-subtitle" data-ar="اكتشف أفضل الوجهات السياحية في مصر" data-en="Discover the best tourist destinations in Egypt" data-fr="Découvrez les meilleures destinations touristiques d'Égypte" data-es="Descubre los mejores destinos turísticos de Egipto">اكتشف أفضل الوجهات السياحية في مصر</p>
+            </div>
+
+            <div class="places-grid" id="placesGrid"></div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section class="attractions" id="attractions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-ar="الجذب السياحي الرائعة" data-en="Amazing Attractions" data-fr="Attractions remarquables" data-es="Atracciones increíbles">الجذب السياحي الرائعة</h2>
+                <p class="section-subtitle" data-ar="أشياء يجب أن تراها قبل أن تموت" data-en="Things you must see before you die" data-fr="Les choses que vous devez voir avant de mourir" data-es="Cosas que debes ver antes de morir">أشياء يجب أن تراها قبل أن تموت</p>
+            </div>
+
+            <div class="attractions-grid" id="attractionsGrid"></div>
+        </div>
+    </section>
+
+    <!-- Culture Section -->
+    <section class="culture" id="culture">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-ar="الثقافة والتراث المصري" data-en="Egyptian Culture & Heritage" data-fr="Culture et patrimoine égyptiens" data-es="Cultura y patrimonio egipcio">الثقافة والتراث المصري</h2>
+                <p class="section-subtitle" data-ar="تعرف على العادات والتقاليد المصرية العريقة" data-en="Learn about ancient Egyptian customs and traditions" data-fr="En savoir plus sur les coutumes et traditions égyptiennes" data-es="Conozca las costumbres y tradiciones egipcias antiguas">تعرف على العادات والتقاليد المصرية العريقة</p>
+            </div>
+
+            <div class="culture-grid">
+                <div class="culture-card">
+                    <div class="culture-icon">🍽️</div>
+                    <h3 data-ar="الطعام المصري" data-en="Egyptian Food" data-fr="Nourriture égyptienne" data-es="Comida egipcia">الطعام المصري</h3>
+                    <p data-ar="الطعام المصري لذيذ جداً وفريد، يتضمن الكشري والفلافل والعيش الشامي والفتة، وكل الأطباق التقليدية اللذيذة" data-en="Egyptian food is delicious and unique, including koshari, falafel, pita bread, and many traditional dishes" data-fr="La nourriture égyptienne est délicieuse et unique, y compris le koshary, les falafels et le pain pita" data-es="La comida egipcia es deliciosa y única, incluyendo koshari, falafel y pan de pita">الطعام المصري لذيذ جداً وفريد</p>
+                </div>
+
+                <div class="culture-card">
+                    <div class="culture-icon">🎵</div>
+                    <h3 data-ar="الموسيقى والفنون" data-en="Music & Arts" data-fr="Musique et Arts" data-es="Música y Artes">الموسيقى والفنون</h3>
+                    <p data-ar="للموسيقى المصرية تراث عريق جداً، وهناك الكثير من الفنانين المصريين الذين قدموا أعمالاً فنية رائعة للعالم" data-en="Egyptian music has a rich heritage, with many artists who have given wonderful artistic works to the world" data-fr="La musique égyptienne a un héritage riche, avec de nombreux artistes qui ont donné des œuvres d'art magnifiques" data-es="La música egipcia tiene una herencia rica, con muchos artistas que han dado obras de arte maravillosas">للموسيقى المصرية تراث عريق جداً</p>
+                </div>
+
+                <div class="culture-card">
+                    <div class="culture-icon">👗</div>
+                    <h3 data-ar="الملابس التقليدية" data-en="Traditional Clothes" data-fr="Vêtements Traditionnels" data-es="Ropa Tradicional">الملابس التقليدية</h3>
+                    <p data-ar="الملابس التقليدية المصرية جميلة جداً، تعكس الهوية المصرية والثقافة العريقة، والدقلة والجلابيب هي من أشهر الملابس" data-en="Traditional Egyptian clothes are beautiful, reflecting Egyptian identity and culture, including the Gallabiya and traditional dresses" data-fr="Les vêtements égyptiens traditionnels sont magnifiques, reflétant l'identité égyptienne et la culture" data-es="La ropa tradicional egipcia es hermosa, reflejando la identidad y cultura egipcia">الملابس التقليدية المصرية جميلة جداً</p>
+                </div>
+
+                <div class="culture-card">
+                    <div class="culture-icon">🏺</div>
+                    <h3 data-ar="الحرف اليدوية" data-en="Handcrafts" data-fr="Artisanat" data-es="Artesanías">الحرف اليدوية</h3>
+                    <p data-ar="الحرف اليدوية المصرية متنوعة جداً، مثل النسيج والفخار والتطريز، وكل حرفة تحمل في طياتها جزءاً من الثقافة المصرية" data-en="Egyptian handicrafts are diverse, including weaving, pottery, and embroidery, each carrying a piece of Egyptian culture" data-fr="L'artisanat égyptien est diversifié, y compris le tissage, la poterie et la broderie" data-es="El artesanía egipcia es diversa, incluyendo tejido, cerámica y bordado">الحرف اليدوية المصرية متنوعة جداً</p>
+                </div>
+
+                <div class="culture-card">
+                    <div class="culture-icon">🎭</div>
+                    <h3 data-ar="المسرح والسينما" data-en="Theater & Cinema" data-fr="Théâtre et Cinéma" data-es="Teatro y Cine">المسرح والسينما</h3>
+                    <p data-ar="مصر لها تاريخ عريق جداً في السينما والمسرح، وقدمت نجومات عالمية مثل أم كلثوم وعماد الدين أديب وزكي رستم" data-en="Egypt has a rich history in cinema and theater, producing world-renowned stars and artists" data-fr="L'Égypte a une histoire riche au cinéma et au théâtre, produisant des stars de renommée mondiale" data-es="Egipto tiene una historia rica en cine y teatro, produciendo estrellas de fama mundial">مصر لها تاريخ عريق جداً في السينما والمسرح</p>
+                </div>
+
+                <div class="culture-card">
+                    <div class="culture-icon">📖</div>
+                    <h3 data-ar="الأدب والكتابة" data-en="Literature & Writing" data-fr="Littérature et Écriture" data-es="Literatura y Escritura">الأدب والكتابة</h3>
+                    <p data-ar="الأدب المصري غني جداً وقدم نجاحات عالمية، مثل نجيب محفوظ الذي حصل على جائزة نوبل للآداب" data-en="Egyptian literature is rich and has achieved international success, like Naguib Mahfouz who won the Nobel Prize in Literature" data-fr="La littérature égyptienne est riche et a remporté du succès international, comme Naguib Mahfouz qui a remporté le prix Nobel de littérature" data-es="La literatura egipcia es rica y ha logrado un éxito internacional, como Naguib Mahfouz que ganó el Premio Nobel de Literatura">الأدب المصري غني جداً وقدم نجاحات عالمية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-ar="تواصل معنا" data-en="Contact Us" data-fr="Nous contacter" data-es="Contáctenos">تواصل معنا</h2>
+                <p class="section-subtitle" data-ar="لديك أسئلة؟ نحن هنا للمساعدة" data-en="Have questions? We're here to help" data-fr="Vous avez des questions ? Nous sommes là pour vous aider" data-es="¿Tienes preguntas? Estamos aquí para ayudarte">لديك أسئلة؟ نحن هنا للمساعدة</p>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="الاسم" data-placeholder-ar="الاسم" data-placeholder-en="Name" data-placeholder-fr="Nom" data-placeholder-es="Nombre" required>
+                <input type="email" placeholder="البريد الإلكتروني" data-placeholder-ar="البريد الإلكتروني" data-placeholder-en="Email" data-placeholder-fr="Email" data-placeholder-es="Correo" required>
+                <textarea rows="5" placeholder="رسالتك" data-placeholder-ar="رسالتك" data-placeholder-en="Your Message" data-placeholder-fr="Votre message" data-placeholder-es="Tu mensaje" required></textarea>
+                <button type="submit" class="submit-btn" data-ar="إرسال الرسالة" data-en="Send Message" data-fr="Envoyer le message" data-es="Enviar mensaje">إرسال الرسالة</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-ar="عن الموقع" data-en="About" data-fr="À propos" data-es="Acerca de">عن الموقع</h3>
+                    <p data-ar="موقع متخصص في تقديم معلومات شاملة عن مصر وحضارتها العريقة والأماكن السياحية المميزة" data-en="A specialized website providing comprehensive information about Egypt, its ancient civilization and tourist destinations" data-fr="Un site spécialisé fournissant des informations complètes sur l'Égypte, sa civilisation antique et ses destinations touristiques" data-es="Un sitio especializado que proporciona información completa sobre Egipto, su civilización antigua y destinos turísticos">موقع متخصص في تقديم معلومات شاملة عن مصر</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-ar="روابط سريعة" data-en="Quick Links" data-fr="Liens rapides" data-es="Enlaces rápidos">روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#about">عن مصر</a></li>
+                        <li><a href="#places">الأماكن السياحية</a></li>
+                        <li><a href="#culture">الثقافة</a></li>
+                        <li><a href="#contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-ar="تابعنا" data-en="Follow Us" data-fr="Nous suivre" data-es="Síguenos">تابعنا</h3>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-ar="© 2024 استكشف مصر - جميع الحقوق محفوظة" data-en="© 2024 Explore Egypt - All Rights Reserved" data-fr="© 2024 Explorer l'Égypte - Tous droits réservés" data-es="© 2024 Explora Egipto - Todos los derechos reservados">© 2024 استكشف مصر - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
